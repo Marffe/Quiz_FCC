@@ -1,6 +1,7 @@
 /* Variables */
 $text_color : #1b1b32;
 $text_font : Helvetica;
+$h_text_font : Verdana, sans-serif;
 $text_size : 18px;
 
 /* Base */
@@ -64,3 +65,11 @@ body {
     }
 }
 
+main {
+    h1 h2 {
+        font-family: $h_text_font;
+    }
+    h2 {
+        border-bottom: 4px solid #dfdfe2;
+    }
+}

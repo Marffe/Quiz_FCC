@@ -42,4 +42,11 @@ body nav {
 body nav ul {
   display: flex;
   justify-content: space-evenly;
+}
+
+main h1 h2 {
+  font-family: Verdana, sans-serif;
+}
+main h2 {
+  border-bottom: 4px solid #dfdfe2;
 }/*# sourceMappingURL=styles.css.map */
