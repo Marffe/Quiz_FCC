@@ -1,0 +1,45 @@
+/* Variables */
+/* Base */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+/* Media Queries */
+/* Default */
+/* Media Query Base */
+/* @media (min-width: AAA) and (max-width: AAA) {
+
+}
+*/
+body {
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+}
+body header {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: #1b1b32;
+}
+body #logo {
+  width: max(100px, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35/4;
+  padding: 0.4rem;
+}
+body h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+}
+body nav {
+  width: 50%;
+  height: 50px;
+}
+body nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=styles.css.map */

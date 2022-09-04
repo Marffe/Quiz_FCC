@@ -1,0 +1,66 @@
+/* Variables */
+$text_color : #1b1b32;
+$text_font : Helvetica;
+$text_size : 18px;
+
+/* Base */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $text_font;
+}
+
+/* Media Queries */
+$MQPhone1 : 320px;
+$MQPhone2 : 375px;
+$MQPhone3 : 425px;
+$MQPhone4 : 540px;
+$MQTablet1 : 768px;
+$MQTablet2 : 820px;
+$MQPC_1 : 1024px;
+$MQPC_2 : 1280px; /* Default */
+$MQPC_3 : 1360px;
+$MQPC_4 : 1440px;
+$MQPC_5 : 1600px;
+$MQPC_6 : 1920px;
+$MQPC_7 : 2048px;
+$MQPC_8 : 2560px;
+
+/* Media Query Base */
+
+/* @media (min-width: #{AAA}) and (max-width: #{AAA}) {
+    
+}
+*/
+body {
+	background: #f5f6f7;
+	color: $text_color;
+	font-family: $text_font;
+    header {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-color: #1b1b32;
+    }
+    #logo {
+        width: max(100px, 18vw);
+        background-color: #0a0a23;
+        aspect-ratio: 35 / 4;
+        padding: 0.4rem;
+    }
+    h1 {
+        color: #f1be32;
+        font-size: min(5vw, 1.2em);
+    }
+    nav {
+        width: 50%;
+        height: 50px;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
