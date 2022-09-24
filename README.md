@@ -32,3 +32,10 @@ Well I do this along the specific part of the WebDev Design Course
 
 - ##### SASS
     - p::before Content added
+
+#### September 24, 2022
+
+I'm in business
+
+- ##### HTML
+    - Added the fontend question in the page
