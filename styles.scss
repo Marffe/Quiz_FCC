@@ -21,69 +21,82 @@ $MQPhone4 : 540px;
 $MQTablet1 : 768px;
 $MQTablet2 : 820px;
 $MQPC_1 : 1024px;
-$MQPC_2 : 1280px; /* Default */
+$MQPC_2 : 1280px;
 $MQPC_3 : 1360px;
 $MQPC_4 : 1440px;
 $MQPC_5 : 1600px;
-$MQPC_6 : 1920px;
+$MQPC_6 : 1920px; /* Default */
 $MQPC_7 : 2048px;
 $MQPC_8 : 2560px;
 
-/* Media Query Base */
-
-/* @media (min-width: #{AAA}) and (max-width: #{AAA}) {
-    
-}
-*/
+/* Content of the Website */
 body {
-	background: #f5f6f7;
-	color: $text_color;
-	font-family: $text_font;
+    background: #e9f4ff;
+    color: $text_color;
+    font-family: $text_font;
     header {
         display: flex;
-        height: 50px;
+        justify-content: space-between;
+        height: 32px;
         width: 100%;
         background-color: #1b1b32;
-    }
-    #logo {
-        width: max(100px, 18vw);
-        background-color: #0a0a23;
-        aspect-ratio: 35 / 4;
-        padding: 0.4rem;
-    }
-    h1 {
-        color: #f1be32;
-        font-size: min(5vw, 1.2em);
-    }
-    nav {
-        width: 50%;
-        height: 50px;
-        ul {
+        .logo-section {
+            background-color: #88857f;
+            width: 18%;
+            height: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
+            margin: 0;
+            align-items: center;
+            #logo {
+                width: 100%;
+                height: 20px;
+            }
+            h1 {
+                color: #f1be32;
+                font-size: 1rem;
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
+        }
+        nav {
+            background-color: #dfdfe2;
+            display: flex;
+            align-items: center;
+            width: 15%;
+            height: 100%;
+            ul {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+            }
         }
     }
-}
+    /* Main Content */
 
-main {
-    h1 h2 {
-        font-family: $h_text_font;
+    /* Main Content */
+    main {
+        h1 h2 {
+            font-family: $h_text_font;
+        }
+        h2 {
+            border-bottom: 4px solid #dfdfe2;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px; 
+            height: 1px;    
+            padding: 0; 
+            margin: -1px;   
+            overflow: hidden;   
+            clip: rect(0, 0, 0, 0); 
+            white-space: nowrap;    
+            border: 0;  
+        }
+        p::before {
+            content: "Question #";
+        }
     }
-    h2 {
-        border-bottom: 4px solid #dfdfe2;
-    }
-    .sr-only {
-        position: absolute;
-        width: 1px; 
-        height: 1px;    
-        padding: 0; 
-        margin: -1px;   
-        overflow: hidden;   
-        clip: rect(0, 0, 0, 0); 
-        white-space: nowrap;    
-        border: 0;  
-    }
-    p::before {
-        content: "Question #";
-    }
+    /* END END END END Main Content END END END END */
 }

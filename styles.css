@@ -9,48 +9,61 @@
 
 /* Media Queries */
 /* Default */
-/* Media Query Base */
-/* @media (min-width: AAA) and (max-width: AAA) {
-
-}
-*/
+/* Content of the Website */
 body {
-  background: #f5f6f7;
+  background: #e9f4ff;
   color: #1b1b32;
   font-family: Helvetica;
+  /* Main Content */
+  /* Main Content */
+  /* END END END END Main Content END END END END */
 }
 body header {
   display: flex;
-  height: 50px;
+  justify-content: space-between;
+  height: 32px;
   width: 100%;
   background-color: #1b1b32;
 }
-body #logo {
-  width: max(100px, 18vw);
-  background-color: #0a0a23;
-  aspect-ratio: 35/4;
-  padding: 0.4rem;
+body header .logo-section {
+  background-color: #88857f;
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  align-items: center;
 }
-body h1 {
+body header .logo-section #logo {
+  width: 100%;
+  height: 20px;
+}
+body header .logo-section h1 {
   color: #f1be32;
-  font-size: min(5vw, 1.2em);
+  font-size: 1rem;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
-body nav {
-  width: 50%;
-  height: 50px;
+body header nav {
+  background-color: #dfdfe2;
+  display: flex;
+  align-items: center;
+  width: 15%;
+  height: 100%;
 }
-body nav ul {
+body header nav ul {
+  width: 100%;
+  list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
-
-main h1 h2 {
+body main h1 h2 {
   font-family: Verdana, sans-serif;
 }
-main h2 {
+body main h2 {
   border-bottom: 4px solid #dfdfe2;
 }
-main .sr-only {
+body main .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -61,6 +74,6 @@ main .sr-only {
   white-space: nowrap;
   border: 0;
 }
-main p::before {
+body main p::before {
   content: "Question #";
 }/*# sourceMappingURL=styles.css.map */
