@@ -11,10 +11,15 @@
 /* Default */
 /* Content of the Website */
 body {
-  background: #e9f4ff;
+  background: #5e5e7a;
   color: #1b1b32;
   font-family: Helvetica;
-  /* Main Content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* NavBar*/
+  /* NavBar */
   /* Main Content */
   /* END END END END Main Content END END END END */
 }
@@ -26,39 +31,75 @@ body header {
   background-color: #1b1b32;
 }
 body header .logo-section {
-  background-color: #88857f;
-  width: 18%;
+  width: 11%;
   height: 100%;
   display: flex;
   justify-content: space-around;
   margin: 0;
+  padding-top: 2px;
   align-items: center;
 }
 body header .logo-section #logo {
   width: 100%;
   height: 20px;
 }
-body header .logo-section h1 {
-  color: #f1be32;
-  font-size: 1rem;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
 body header nav {
-  background-color: #dfdfe2;
   display: flex;
   align-items: center;
   width: 15%;
   height: 100%;
 }
 body header nav ul {
+  font-weight: bold;
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
+body header nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  list-style: none;
+  padding: 4px;
+}
+body header nav ul li a {
+  width: 100%;
+  border-radius: 2px;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+body header nav ul li a:hover {
+  color: #000000;
+  background: #ffd036;
+}
+body header nav ul li a:active {
+  color: #000;
+  background: #c49d1e;
+}
+body main {
+  background: #e9f4ff;
+  margin-top: 40px;
+  padding: 12px;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 8px 10px;
+  display: flex;
+  flex-direction: column;
+}
 body main h1 h2 {
   font-family: Verdana, sans-serif;
+}
+body main h1 {
+  background: #ffd036;
+  color: #000000;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 24px;
+  border-radius: 12px;
 }
 body main h2 {
   border-bottom: 4px solid #dfdfe2;
